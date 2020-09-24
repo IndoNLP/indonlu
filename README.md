@@ -25,7 +25,7 @@ IndoNLU is a collection of Natural Language Understanding (NLU) resources for Ba
     - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
 
 ## Leaderboard (Under Construction)
-- Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard)
+- Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
 
 ## Paper
 IndoNLU has been accepted on AACL 2020 and you can find the detail on https://arxiv.org/abs/2009.05387
