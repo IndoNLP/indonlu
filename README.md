@@ -1,8 +1,15 @@
 # IndoNLU
 
 IndoNLU is a collection of Natural Language Understanding (NLU) resources for Bahasa Indonesia.
-IndoNLU consists for four main components:
+
+## 12 Downstream Tasks
+- Link [[Link]](https://github.com/indobenchmark/indonlu/tree/master/dataset)
+- We provide train, valid, and test set (with masked labels, no true labels). We are currently preparing a platform for auto-evaluation using Codalab. Please stay tuned!
+
+## Indo4B
 - 23GB Indo4B Pretraining Dataset [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_all_uncased_blankline.txt.xz)
+
+## IndoBERT models
 - 8 IndoBERT Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
   - IndoBERT-base
     - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-base-p1)
@@ -16,9 +23,11 @@ IndoNLU consists for four main components:
   - IndoBERT-lite-large
     - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p1)
     - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
-- 12 IndoNLU Downstream Tasks [[Link]](https://github.com/indobenchmark/indonlu/tree/master/dataset)
-- Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard)
 
+## Leaderboard (Under Construction)
+- Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
+
+## Paper
 IndoNLU has been accepted on AACL 2020 and you can find the detail on https://arxiv.org/abs/2009.05387
 If you are using any component on IndoNLU for research purposes, please cite the following paper:
 ```
