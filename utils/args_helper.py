@@ -102,10 +102,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = emotion_detection_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/emotion-twitter/train_preprocess.csv'
-        args['valid_set_path'] = './data/emotion-twitter/valid_preprocess.csv'
-        args['test_set_path'] = './data/emotion-twitter/test_preprocess.csv'
-        args['vocab_path']  = "./data/emotion-twitter/vocab_uncased.txt"
+        args['train_set_path'] = './data/emot_emotion-twitter/train_preprocess.csv'
+        args['valid_set_path'] = './data/emot_emotion-twitter/valid_preprocess.csv'
+        args['test_set_path'] = './data/emot_emotion-twitter/test_preprocess.csv'
+        args['vocab_path']  = "./data/emot_emotion-twitter/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -122,10 +122,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_multi_classification
         args['metrics_fn'] = absa_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/absa-airy/train_preprocess.csv'
-        args['valid_set_path'] = './data/absa-airy/valid_preprocess.csv'
-        args['test_set_path'] = './data/absa-airy/test_preprocess.csv'
-        args['vocab_path'] = "./data/absa-airy/vocab_uncased.txt"
+        args['train_set_path'] = './data/hoasa_absa-airy/train_preprocess.csv'
+        args['valid_set_path'] = './data/hoasa_absa-airy/valid_preprocess.csv'
+        args['test_set_path'] = './data/hoasa_absa-airy/test_preprocess.csv'
+        args['vocab_path'] = "./data/hoasa_absa-airy/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -142,10 +142,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = aspect_extraction_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/term-extraction-airy/train_preprocess.txt'
-        args['valid_set_path'] = './data/term-extraction-airy/valid_preprocess.txt'
-        args['test_set_path'] = './data/term-extraction-airy/test_preprocess.txt'
-        args['vocab_path'] = "./data/term-extraction-airy/vocab_uncased.txt"
+        args['train_set_path'] = './data/terma_term-extraction-airy/train_preprocess.txt'
+        args['valid_set_path'] = './data/terma_term-extraction-airy/valid_preprocess.txt'
+        args['test_set_path'] = './data/terma_term-extraction-airy/test_preprocess.txt'
+        args['vocab_path'] = "./data/terma_term-extraction-airy/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -162,10 +162,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = ner_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/ner-grit/train_preprocess.txt'
-        args['valid_set_path'] = './data/ner-grit/valid_preprocess.txt'
-        args['test_set_path'] = './data/ner-grit/test_preprocess.txt'
-        args['vocab_path'] = "./data/ner-grit/vocab_uncased.txt"
+        args['train_set_path'] = './data/nergrit_ner-grit/train_preprocess.txt'
+        args['valid_set_path'] = './data/nergrit_ner-grit/valid_preprocess.txt'
+        args['test_set_path'] = './data/nergrit_ner-grit/test_preprocess.txt'
+        args['vocab_path'] = "./data/nergrit_ner-grit/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -182,10 +182,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = pos_tag_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/pos-idn/train_preprocess.txt'
-        args['valid_set_path'] = './data/pos-idn/valid_preprocess.txt'
-        args['test_set_path'] = './data/pos-idn/test_preprocess.txt'
-        args['vocab_path'] = "./data/pos-idn/vocab_uncased.txt"
+        args['train_set_path'] = './data/bapos_pos-idn/train_preprocess.txt'
+        args['valid_set_path'] = './data/bapos_pos-idn/valid_preprocess.txt'
+        args['test_set_path'] = './data/bapos_pos-idn/test_preprocess.txt'
+        args['vocab_path'] = "./data/bapos_pos-idn/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -202,10 +202,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = entailment_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/entailment-ui/train_preprocess.csv'
-        args['valid_set_path'] = './data/entailment-ui/valid_preprocess.csv'
-        args['test_set_path'] = './data/entailment-ui/test_preprocess.csv'
-        args['vocab_path'] = "./data/entailment-ui/vocab_uncased.txt"
+        args['train_set_path'] = './data/wrete_entailment-ui/train_preprocess.csv'
+        args['valid_set_path'] = './data/wrete_entailment-ui/valid_preprocess.csv'
+        args['test_set_path'] = './data/wrete_entailment-ui/test_preprocess.csv'
+        args['vocab_path'] = "./data/wrete_entailment-ui/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -222,10 +222,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = document_sentiment_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/doc-sentiment-prosa/train_preprocess.tsv'
-        args['valid_set_path'] = './data/doc-sentiment-prosa/valid_preprocess.tsv'
-        args['test_set_path'] = './data/doc-sentiment-prosa/test_preprocess.tsv'
-        args['vocab_path'] = "./data/doc-sentiment-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './data/smsa_doc-sentiment-prosa/train_preprocess.tsv'
+        args['valid_set_path'] = './data/smsa_doc-sentiment-prosa/valid_preprocess.tsv'
+        args['test_set_path'] = './data/smsa_doc-sentiment-prosa/test_preprocess.tsv'
+        args['vocab_path'] = "./data/smsa_doc-sentiment-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -242,10 +242,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = keyword_extraction_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/keyword-extraction-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/keyword-extraction-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/keyword-extraction-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/keyword-extraction-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './data/keps_keyword-extraction-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './data/keps_keyword-extraction-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './data/keps_keyword-extraction-prosa/test_preprocess.txt'
+        args['vocab_path'] = "./data/keps_keyword-extraction-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -262,10 +262,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = qa_factoid_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/qa-factoid-itb/train_preprocess.csv'
-        args['valid_set_path'] = './data/qa-factoid-itb/valid_preprocess.csv'
-        args['test_set_path'] = './data/qa-factoid-itb/test_preprocess.csv'
-        args['vocab_path'] = "./data/qa-factoid-itb/vocab_uncased.txt"
+        args['train_set_path'] = './data/facqa_qa-factoid-itb/train_preprocess.csv'
+        args['valid_set_path'] = './data/facqa_qa-factoid-itb/valid_preprocess.csv'
+        args['test_set_path'] = './data/facqa_qa-factoid-itb/test_preprocess.csv'
+        args['vocab_path'] = "./data/facqa_qa-factoid-itb/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -282,10 +282,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = ner_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/ner-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/ner-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/ner-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/ner-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './data/nerp_ner-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './data/nerp_ner-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './data/nerp_ner-prosa/test_preprocess.txt'
+        args['vocab_path'] = "./data/nerp_ner-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -302,10 +302,10 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = pos_tag_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/pos-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/pos-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/pos-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/pos-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './data/posp_pos-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './data/posp_pos-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './data/posp_pos-prosa/test_preprocess.txt'
+        args['vocab_path'] = "./data/posp_pos-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
@@ -322,35 +322,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_multi_classification
         args['metrics_fn'] = absa_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/absa-prosa/train_preprocess.csv'
-        args['valid_set_path'] = './data/absa-prosa/valid_preprocess.csv'
-        args['test_set_path'] = './data/absa-prosa/test_preprocess.csv'
-        args['vocab_path'] = "./data/absa-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './data/casa_absa-prosa/train_preprocess.csv'
+        args['valid_set_path'] = './data/casa_absa-prosa/valid_preprocess.csv'
+        args['test_set_path'] = './data/casa_absa-prosa/test_preprocess.csv'
+        args['vocab_path'] = "./data/casa_absa-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
             'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
             'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-prosa_uncased.txt'
-        }
-        args['k_fold'] = 1
-        args['word_tokenizer_class'] = TweetTokenizer
-    elif args['dataset'] == "news-category-prosa":
-        args['task'] = 'sequence_classification'
-        args['num_labels'] = NewsCategorizationDataset.NUM_LABELS
-        args['dataset_class'] = NewsCategorizationDataset
-        args['dataloader_class'] = NewsCategorizationDataLoader
-        args['forward_fn'] = forward_sequence_multi_classification
-        args['metrics_fn'] = news_categorization_metrics_fn
-        args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/news-category-prosa/train_preprocess.tsv'
-        args['valid_set_path'] = './data/news-category-prosa/valid_preprocess.tsv'
-        args['test_set_path'] = './data/news-category-prosa/test_preprocess.tsv'
-        args['vocab_path'] = "./data/news-category-prosa/vocab_uncased.txt"
-        args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_news-category-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_news-category-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
