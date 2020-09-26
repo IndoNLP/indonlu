@@ -53,3 +53,42 @@ We provide the access to our large pretraining dataset. In this version, we excl
 ## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
 - Submission Portal https://competitions.codalab.org/competitions/26537
+
+## Quick Start
+
+### Predict
+_TBD_
+
+### Train
+
+1. Set the `CUDA_VISIBLE_DEVICES` environment variable first
+    ```
+    export CUDA_VISIBLE_DEVICES=0
+    ```
+2. Then, simply execute the following command to run the training
+    ```
+    make train DATASET=<dataset>
+    ```
+    It will train all of the models for the specified _\<dataset\>_ with default parameter
+3. Check the available datasets in `datasets/` directory
+4. All of the models used are listed in `scripts/config/model/train.yaml` \
+    Feel free to add or comment as you see fit
+5. To use different hyperparameter, create a new file in `scripts/config/hyperparameter/` \
+    Then specify it in the command like this
+    ```
+    make train DATASET=<dataset> HYPERPARAMETER=<hyperparameter_filename_without_the_extension>
+    ```
+6. There are 2 more parameters that can be specified in the command:
+    - EARLY_STOP
+    - BATCH_SIZE
+
+    Use the following command to utilize it
+    ```
+    make train DATASET=<dataset> EARLY_STOP=<early_stop> BATCH_SIZE=<batch_size>
+    ```
+7. There are also a grouping command of specific task for easy access like
+    ```
+    make train_all_1
+    make train_all_2
+    etc
+    ```
