@@ -28,9 +28,14 @@ IndoNLU is a collection of Natural Language Understanding (NLU) resources for Ba
     - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p1)
     - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
 
-## Leaderboard (Under Construction)
+## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
-- Submission Portal https://competitions.codalab.org/competitions/26537 (We will add more description on the submission format!)
+- Submission Portal https://competitions.codalab.org/competitions/26537
+
+### Submission Format
+Please kindly check [[Link]](https://github.com/indobenchmark/indonlu/tree/master/submission_examples). For each task, there is different format. Every submission file always start with the `index` column (the id of the test sample following the order of the masked test set). 
+
+First you need to rename your prediction into 'pred.txt', then zip the file.
 
 ## Paper
 IndoNLU has been accepted on AACL 2020 and you can find the detail on https://arxiv.org/abs/2009.05387
