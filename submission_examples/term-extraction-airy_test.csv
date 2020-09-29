@@ -1,0 +1,11 @@
+index,label
+0,"['B-ASPECT', 'B-SENTIMENT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'B-ASPECT', 'I-ASPECT', 'B-SENTIMENT', 'I-SENTIMENT', 'O']"
+1,"['O', 'O', 'O', 'O', 'O', 'O', 'O']"
+2,"['O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'O', 'B-ASPECT', 'O', 'B-SENTIMENT', 'O']"
+3,"['B-ASPECT', 'B-SENTIMENT', 'I-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'B-ASPECT', 'O']"
+4,"['B-ASPECT', 'B-SENTIMENT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'B-ASPECT', 'I-ASPECT', 'B-SENTIMENT', 'I-SENTIMENT', 'O']"
+5,"['B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'I-SENTIMENT', 'O', 'B-ASPECT', 'I-ASPECT', 'B-SENTIMENT', 'O', 'B-ASPECT', 'O', 'O', 'O', 'O', 'O', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+6,"['B-ASPECT', 'I-ASPECT', 'O', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+7,"['B-ASPECT', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+8,"['B-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+9,"['B-ASPECT', 'B-SENTIMENT', 'O', 'B-SENTIMENT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'I-SENTIMENT', 'I-SENTIMENT', 'I-SENTIMENT', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'B-ASPECT', 'I-ASPECT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'B-SENTIMENT', 'I-SENTIMENT', 'B-ASPECT', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-ASPECT', 'B-SENTIMENT', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"

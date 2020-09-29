@@ -1,0 +1,11 @@
+index,fuel,machine,others,part,price,service
+0,neutral,positive,neutral,neutral,neutral,neutral
+1,neutral,negative,neutral,neutral,neutral,neutral
+2,neutral,neutral,neutral,neutral,positive,neutral
+3,neutral,neutral,neutral,positive,neutral,neutral
+4,neutral,neutral,positive,neutral,neutral,neutral
+5,neutral,negative,neutral,neutral,neutral,neutral
+6,neutral,neutral,negative,neutral,neutral,neutral
+7,positive,positive,neutral,positive,neutral,neutral
+8,neutral,positive,neutral,neutral,neutral,neutral
+9,neutral,neutral,negative,neutral,neutral,neutral

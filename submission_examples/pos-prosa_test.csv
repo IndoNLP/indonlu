@@ -1,0 +1,11 @@
+index,label
+0,"['B-NNO', 'B-NNO', 'B-NNP', 'B-VBI', 'B-PPO', 'B-NNP', 'B-SYM', 'B-CCN', 'B-VBI', 'B-PPO', 'B-PPO', 'B-NNP', 'B-PPO', 'B-NNO', 'B-NUM', 'B-SYM']"
+1,"['B-NNO', 'B-VBP', 'B-PPO', 'B-NNO', 'B-SYM', 'B-NNO', 'B-NNO', 'B-CCN', 'B-NNO', 'B-SYM', 'B-NNO', 'B-PRR', 'B-VBP', 'B-VBP', 'B-PPO', 'B-PPO', 'B-NNO', 'B-NNP', 'B-VBI', 'B-PPO', 'B-NUM', 'B-CSN', 'B-NUM', 'B-NNO', 'B-PPO', 'B-NNO', 'B-NNO', 'B-VBT', 'B-NNO', 'B-SYM']"
+2,"['B-SYM', 'B-NNO', 'B-PPO', 'B-NNO', 'B-VBI', 'B-PPO', 'B-NNO', 'B-NNO', 'B-NNP', 'B-NNP', 'B-CCN', 'B-NNP', 'B-SYM', 'B-NNO', 'B-PPO', 'B-NNO', 'B-VBT', 'B-NNO', 'B-PPO', 'B-VBT', 'B-NNP', 'B-SYM', 'B-VBT', 'B-NNP', 'B-SYM', 'B-NNO', 'B-VBP', 'B-NNO', 'B-SYM', 'B-NNP', 'B-SYM', 'B-NUM', 'B-SYM']"
+3,"['B-SYM', 'B-PRN', 'B-NNO', 'B-ART', 'B-NNO', 'B-NNO', 'B-SYM', 'B-PPO', 'B-NNO', 'B-NNO', 'B-ART', 'B-PAR', 'B-NNO', 'B-ADJ', 'B-VBI', 'B-PRI', 'B-ADV', 'B-SYM', 'B-CCN', 'B-PRN', 'B-PPO', 'B-NNO', 'B-ADJ', 'B-SYM', 'B-NNO', 'B-PPO', 'B-NNO', 'B-SYM', 'B-NNP', 'B-NNP', 'B-SYM', 'B-VBT', 'B-NNP', 'B-SYM']"
+4,"['B-NNO', 'B-ADJ', 'B-NNO', 'B-NNO', 'B-ADV', 'B-NNO', 'B-CCN', 'B-ADJ', 'B-CSN', 'B-NNO', 'B-PRK', 'B-ADK', 'B-VBT', 'B-NNO', 'B-ADJ', 'B-CCN', 'B-ADJ', 'B-VBP', 'B-CCN', 'B-VBT', 'B-NNP', 'B-NNO', 'B-PRR', 'B-NEG', 'B-ADV', 'B-SYM']"
+5,"['B-PPO', 'B-VBT', 'B-ADV', 'B-ADJ', 'B-SYM', 'B-PRN', 'B-VBT', 'B-NNO', 'B-PRR', 'B-ADV', 'B-ADJ', 'B-CCN', 'B-NEG', 'B-ADJ', 'B-SYM', 'B-VBT', 'B-NNP', 'B-PPO', 'B-NNO', 'B-PRR', 'B-VBP', 'B-NNP', 'B-SYM', 'B-NUM', 'B-SYM', 'B-SYM']"
+6,"['B-VBI', 'B-ART', 'B-NNP', 'B-PRR', 'B-ADV', 'B-VBT', 'B-NNO', 'B-ADJ', 'B-PPO', 'B-NNP', 'B-CSN', 'B-SYM', 'B-PPO', 'B-NNO', 'B-NNP', 'B-SYM', 'B-NNO', 'B-ART', 'B-VBP', 'B-ADJ', 'B-NNO', 'B-VBI', 'B-SYM']"
+7,"['B-NNP', 'B-SYM', 'B-NNP', 'B-ADK', 'B-VBL', 'B-NNO', 'B-KUA', 'B-PRR', 'B-PRR', 'B-ADK', 'B-VBP', 'B-SYM']"
+8,"['B-NNP', 'B-ART', 'B-VBI', 'B-ADJ', 'B-ADJ', 'B-PPO', 'B-NNO', 'B-PRR', 'B-ADJ', 'B-NNO', 'B-SYM']"
+9,"['B-SYM', 'B-NNP', 'B-NNP', 'B-NNP', 'B-SYM', 'B-NNP', 'B-SYM', 'B-VBT', 'B-NNO', 'B-ADJ', 'B-PPO', 'B-NNO', 'B-SYM', 'B-NNP', 'B-SYM', 'B-NNO', 'B-NNO', 'B-NNO', 'B-NNO', 'B-NNO', 'B-SYM', 'B-NNP', 'B-SYM', 'B-NNO', 'B-NUM', 'B-SYM', 'B-NNP', 'B-SYM', 'B-NUM', 'B-SYM', 'B-SYM']"

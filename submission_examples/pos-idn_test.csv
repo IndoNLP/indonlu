@@ -1,0 +1,11 @@
+index,label
+0,"['B-IN', 'B-CD', 'B-Z', 'B-NN', 'B-NN', 'B-IN', 'B-NN', 'B-IN', 'B-NN', 'B-VB', 'B-NND', 'B-NN', 'I-NN', 'B-NN', 'B-NNP', 'B-IN', 'B-NN', 'B-SC', 'B-JJ', 'B-Z', 'B-VB', 'B-CD', 'B-NN', 'B-SC', 'B-VB', 'B-IN', 'B-NN', 'B-PRP', 'I-PRP', 'B-Z']"
+1,"['B-NN', 'B-NNP', 'B-MD', 'B-VB', 'B-NN', 'B-IN', 'B-NNP', 'B-NNP', 'B-NNP', 'B-NNP', 'B-IN', 'B-NN', 'B-VB', 'B-NN', 'B-Z', 'B-PR', 'B-VB', 'B-NN', 'B-NNP', 'B-CD', 'B-NNP', 'B-Z', 'B-NNP', 'B-Z']"
+2,"['B-NNP', 'B-MD', 'B-VB', 'B-IN', 'B-CD', 'B-NN', 'B-NN', 'B-SC', 'B-MD', 'B-VB', 'B-SC', 'B-PRP', 'B-VB', 'B-IN', 'B-NNP', 'B-Z', 'B-VB', 'B-NN', 'B-PR', 'B-Z']"
+3,"['B-NN', 'B-PR', 'B-MD', 'B-VB', 'B-JJ', 'B-PRP', 'I-PRP', 'B-IN', 'B-WH', 'B-PRP', 'B-VB', 'B-NN', 'B-PRP', 'I-PRP', 'B-SC', 'B-NN', 'B-IN', 'B-NN', 'B-VB', 'B-NN', 'B-NNP', 'B-NNP', 'B-SC', 'B-NNP', 'B-VB', 'B-NN', 'B-NN', 'B-NNP', 'B-Z']"
+4,"['B-NNP', 'B-CD', 'B-NND', 'B-VB', 'B-VB', 'B-IN', 'B-NN', 'B-NN', 'B-CC', 'B-NEG', 'B-MD', 'B-VB', 'B-NN', 'B-Z']"
+5,"['B-PRP', 'B-RB', 'B-VB', 'B-NN', 'B-PR', 'B-Z']"
+6,"['B-NN', 'B-NN', 'B-NNP', 'B-NNP', 'B-NNP', 'B-NNP', 'B-VB', 'B-IN', 'B-NN', 'B-NN', 'B-IN', 'B-NNP', 'B-Z', 'B-NNP', 'B-Z', 'B-VB', 'B-NN', 'B-JJ', 'B-NNP', 'B-NNP', 'B-NNP', 'B-NNP', 'B-SC', 'B-VB', 'B-VB', 'B-NNP', 'B-NNP', 'B-IN', 'B-NN', 'B-NN', 'B-CC', 'B-VB', 'B-IN', 'B-NNP', 'B-Z']"
+7,"['B-NNP', 'B-Z', 'B-SC', 'B-OD', 'B-NND', 'B-VB', 'B-IN', 'B-NNP', 'B-NNP', 'B-CC', 'B-CC', 'B-VB', 'B-NN', 'B-NNP', 'B-IN', 'B-CD', 'B-NN', 'B-SC', 'B-VB', 'B-NN', 'B-NNP', 'B-NN', 'B-NNP', 'B-IN', 'B-NN', 'I-NN', 'B-JJ', 'B-Z', 'B-VB', 'B-NN', 'B-NN', 'B-RB', 'B-SC', 'B-VB', 'B-IN', 'B-NN', 'I-NN', 'B-IN', 'B-NNP', 'B-Z']"
+8,"['B-NN', 'B-VB', 'B-CD', 'B-NN', 'B-PR', 'B-VB', 'B-Z', 'B-PRP', 'B-MD', 'B-NND', 'B-NN', 'B-CC', 'B-MD', 'B-VB', 'B-CD', 'B-NN', 'I-NN', 'B-JJ', 'B-IN', 'B-CD', 'I-CD', 'I-CD', 'B-SC', 'B-VB', 'B-Z', 'B-PRP', 'B-VB', 'B-IN', 'B-NN', 'B-Z']"
+9,"['B-NNP', 'B-VB', 'B-VB', 'B-NN', 'B-JJ', 'B-CC', 'B-NN', 'I-NN', 'B-NND', 'B-PR', 'B-Z', 'B-RB', 'B-SC', 'B-PRP', 'B-VB', 'B-VB', 'B-NN', 'B-JJ', 'B-Z']"

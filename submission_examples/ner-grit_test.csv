@@ -1,0 +1,11 @@
+index,label
+0,"['B-PERSON', 'I-PERSON', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'O', 'O']"
+1,"['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-PERSON', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-PERSON', 'I-PERSON', 'I-PERSON', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+2,"['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'I-ORGANISATION', 'O', 'O', 'O', 'B-PLACE', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'O', 'O', 'O', 'O']"
+3,"['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+4,"['O', 'O', 'O', 'O', 'O', 'O', 'B-PERSON', 'I-PERSON', 'O', 'O', 'B-PERSON', 'I-PERSON', 'O', 'O', 'O', 'O', 'B-PERSON', 'I-PERSON', 'O', 'B-PERSON', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'I-ORGANISATION', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+5,"['O', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'O', 'O', 'B-ORGANISATION', 'I-ORGANISATION', 'O', 'O', 'O', 'O', 'O', 'B-ORGANISATION', 'I-ORGANISATION', 'O', 'B-PLACE', 'I-PLACE', 'O']"
+6,"['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-PLACE', 'I-PLACE', 'O', 'B-PLACE', 'I-PLACE', 'O']"
+7,"['B-ORGANISATION', 'O', 'O', 'B-PLACE', 'O', 'B-PLACE', 'I-PLACE', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+8,"['B-PERSON', 'I-PERSON', 'O', 'O', 'O', 'O', 'O', 'O', 'O']"
+9,"['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-PERSON', 'O', 'B-PERSON', 'I-PERSON', 'O', 'O', 'O', 'B-PERSON', 'I-PERSON', 'O']"
