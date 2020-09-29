@@ -6,17 +6,6 @@ import re
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
 
-def generate_vocab(dataset):
-    with open("vocab.txt", "w+") as f_out:
-        vocab = {}
-        for data in dataset.data:
-            words = data['sentence']
-            for word in words:
-                for w in word.split(" "):
-                    vocab[w] = True
-        for word in vocab:
-            f_out.write(word + "\n")
-
 #####
 # Term Extraction Airy
 #####
@@ -362,7 +351,7 @@ class PosTagProsaDataset(Dataset):
     
     def __len__(self):
         return len(self.data)
-        
+
 class PosTagDataLoader(DataLoader):
     def __init__(self, max_seq_len=512, *args, **kwargs):
         super(PosTagDataLoader, self).__init__(*args, **kwargs)
