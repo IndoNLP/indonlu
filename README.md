@@ -35,7 +35,7 @@ IndoNLU is a collection of Natural Language Understanding (NLU) resources for Ba
 ### Submission Format
 Please kindly check [[Link]](https://github.com/indobenchmark/indonlu/tree/master/submission_examples). For each task, there is different format. Every submission file always start with the `index` column (the id of the test sample following the order of the masked test set). 
 
-First you need to rename your prediction into 'pred.txt', then zip the file.
+For the submission, first you need to rename your prediction into 'pred.txt', then zip the file.
 
 ## Paper
 IndoNLU has been accepted on AACL 2020 and you can find the detail on https://arxiv.org/abs/2009.05387
