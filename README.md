@@ -70,7 +70,7 @@ _TBD_
     ```
 2. Then, simply execute the following command to run the training
     ```
-    make train DATASET=<dataset>
+    make reproduce DATASET=<dataset>
     ```
     It will train all of the models for the specified _\<dataset\>_ with default parameter
 3. Check the available datasets in `datasets/` directory
@@ -79,7 +79,7 @@ _TBD_
 5. To use different hyperparameter, create a new file in `scripts/config/hyperparameter/` \
     Then specify it in the command like this
     ```
-    make train DATASET=<dataset> HYPERPARAMETER=<hyperparameter_filename_without_the_extension>
+    make reproduce DATASET=<dataset> HYPERPARAMETER=<hyperparameter_filename_without_the_extension>
     ```
 6. There are 2 more parameters that can be specified in the command:
     - EARLY_STOP
@@ -87,11 +87,11 @@ _TBD_
 
     Use the following command to utilize it
     ```
-    make train DATASET=<dataset> EARLY_STOP=<early_stop> BATCH_SIZE=<batch_size>
+    make reproduce DATASET=<dataset> EARLY_STOP=<early_stop> BATCH_SIZE=<batch_size>
     ```
 7. There are also a grouping command of specific task for easy access like
     ```
-    make train_all_1
-    make train_all_2
+    make reproduce_all_1
+    make reproduce_all_2
     etc
     ```
