@@ -60,6 +60,9 @@ We provide the access to our large pretraining dataset. In this version, we excl
 _TBD_
 
 ### Train
+_TBD_
+
+### Reproduce Result
 
 1. Set the `CUDA_VISIBLE_DEVICES` environment variable first
     ```
