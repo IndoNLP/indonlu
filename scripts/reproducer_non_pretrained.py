@@ -46,11 +46,10 @@ for m in model_configs:
     for o in hyperparams["options"]:
         cmd += f" {o}"
 
-    # # debug
-    # print(cmd)
-
-    # # run in parallel
-    # results = subprocess.run(
-    #     cmd, shell=True, universal_newlines=True, check=True, text=True)
+    print(f"Running: {cmd}")
 
     os.system(cmd)
+
+    # # run in parallel, comment above command
+    # results = subprocess.run(
+    #     cmd, shell=True, universal_newlines=True, check=True, text=True)
