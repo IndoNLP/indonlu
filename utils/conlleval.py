@@ -188,4 +188,16 @@ def conll_evaluation(hyps_list, labels_list):
     rec = overall.rec
     f1 = overall.fscore
     
-    return (acc, pre, rec, f1)
+    type_macro_pre = 0.0
+    type_macro_rec = 0.0
+    type_macro_f1 = 0.0
+    for k in by_type.keys():
+        type_macro_pre += by_type[k].prec
+        type_macro_rec += by_type[k].rec
+        type_macro_f1 += by_type[k].fscore
+        
+    type_macro_pre = type_macro_pre / float(len(by_type))
+    type_macro_rec = type_macro_rec / float(len(by_type))
+    type_macro_f1 = type_macro_f1 / float(len(by_type))
+    
+    return (acc, pre, rec, f1, type_macro_pre, type_macro_rec, type_macro_f1)
