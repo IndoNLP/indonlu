@@ -14,27 +14,27 @@ def aspect_extraction_metrics_fn(list_hyp, list_label):
     metrics = {}
     acc, pre, rec, f1 = conll_evaluation(list_hyp, list_label)
     metrics["ACC"] = acc
-    metrics["F1"] = pre
+    metrics["F1"] = f1
     metrics["REC"] = rec
-    metrics["PRE"] = f1
+    metrics["PRE"] = pre
     return metrics
 
 def ner_metrics_fn(list_hyp, list_label):
     metrics = {}
     acc, pre, rec, f1 = conll_evaluation(list_hyp, list_label)
     metrics["ACC"] = acc
-    metrics["F1"] = pre
+    metrics["F1"] = f1
     metrics["REC"] = rec
-    metrics["PRE"] = f1
+    metrics["PRE"] = pre
     return metrics
 
 def pos_tag_metrics_fn(list_hyp, list_label):
     metrics = {}
     acc, pre, rec, f1 = conll_evaluation(list_hyp, list_label)
     metrics["ACC"] = acc
-    metrics["F1"] = pre
+    metrics["F1"] = f1
     metrics["REC"] = rec
-    metrics["PRE"] = f1
+    metrics["PRE"] = pre
     return metrics
 
 def entailment_metrics_fn(list_hyp, list_label):
@@ -57,18 +57,18 @@ def keyword_extraction_metrics_fn(list_hyp, list_label):
     metrics = {}
     acc, pre, rec, f1 = conll_evaluation(list_hyp, list_label)
     metrics["ACC"] = acc
-    metrics["F1"] = pre
+    metrics["F1"] = f1
     metrics["REC"] = rec
-    metrics["PRE"] = f1
+    metrics["PRE"] = pre
     return metrics
 
 def qa_factoid_metrics_fn(list_hyp, list_label):
     metrics = {}
     acc, pre, rec, f1 = conll_evaluation(list_hyp, list_label)
     metrics["ACC"] = acc
-    metrics["F1"] = pre
+    metrics["F1"] = f1
     metrics["REC"] = rec
-    metrics["PRE"] = f1
+    metrics["PRE"] = pre
     return metrics
 
 def absa_metrics_fn(list_hyp, list_label):
