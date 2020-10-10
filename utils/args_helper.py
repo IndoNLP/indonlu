@@ -102,15 +102,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = emotion_detection_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/emot_emotion-twitter/train_preprocess.csv'
-        args['valid_set_path'] = './data/emot_emotion-twitter/valid_preprocess.csv'
-        args['test_set_path'] = './data/emot_emotion-twitter/test_preprocess.csv'
-        args['vocab_path']  = "./data/emot_emotion-twitter/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/emot_emotion-twitter/train_preprocess.csv'
+        args['valid_set_path'] = './dataset/emot_emotion-twitter/valid_preprocess.csv'
+        args['test_set_path'] = './dataset/emot_emotion-twitter/test_preprocess_masked_label.csv'
+        args['vocab_path']  = "./dataset/emot_emotion-twitter/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_emotion-twitter_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_emotion-twitter_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_emotion-twitter_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_emotion-twitter_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -122,15 +122,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_multi_classification
         args['metrics_fn'] = absa_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/hoasa_absa-airy/train_preprocess.csv'
-        args['valid_set_path'] = './data/hoasa_absa-airy/valid_preprocess.csv'
-        args['test_set_path'] = './data/hoasa_absa-airy/test_preprocess.csv'
-        args['vocab_path'] = "./data/hoasa_absa-airy/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/hoasa_absa-airy/train_preprocess.csv'
+        args['valid_set_path'] = './dataset/hoasa_absa-airy/valid_preprocess.csv'
+        args['test_set_path'] = './dataset/hoasa_absa-airy/test_preprocess_masked_label.csv'
+        args['vocab_path'] = "./dataset/hoasa_absa-airy/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-airy_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-airy_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-airy_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-airy_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -142,15 +142,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = aspect_extraction_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/terma_term-extraction-airy/train_preprocess.txt'
-        args['valid_set_path'] = './data/terma_term-extraction-airy/valid_preprocess.txt'
-        args['test_set_path'] = './data/terma_term-extraction-airy/test_preprocess.txt'
-        args['vocab_path'] = "./data/terma_term-extraction-airy/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/terma_term-extraction-airy/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/terma_term-extraction-airy/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/terma_term-extraction-airy/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/terma_term-extraction-airy/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_term-extraction-airy_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_term-extraction-airy_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_term-extraction-airy_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_term-extraction-airy_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -162,15 +162,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = ner_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/nergrit_ner-grit/train_preprocess.txt'
-        args['valid_set_path'] = './data/nergrit_ner-grit/valid_preprocess.txt'
-        args['test_set_path'] = './data/nergrit_ner-grit/test_preprocess.txt'
-        args['vocab_path'] = "./data/nergrit_ner-grit/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/nergrit_ner-grit/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/nergrit_ner-grit/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/nergrit_ner-grit/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/nergrit_ner-grit/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-grit_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-grit_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-grit_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-grit_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -182,15 +182,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = pos_tag_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/bapos_pos-idn/train_preprocess.txt'
-        args['valid_set_path'] = './data/bapos_pos-idn/valid_preprocess.txt'
-        args['test_set_path'] = './data/bapos_pos-idn/test_preprocess.txt'
-        args['vocab_path'] = "./data/bapos_pos-idn/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/bapos_pos-idn/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/bapos_pos-idn/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/bapos_pos-idn/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/bapos_pos-idn/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-idn_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-idn_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-idn_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-idn_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -202,15 +202,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = entailment_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/wrete_entailment-ui/train_preprocess.csv'
-        args['valid_set_path'] = './data/wrete_entailment-ui/valid_preprocess.csv'
-        args['test_set_path'] = './data/wrete_entailment-ui/test_preprocess.csv'
-        args['vocab_path'] = "./data/wrete_entailment-ui/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/wrete_entailment-ui/train_preprocess.csv'
+        args['valid_set_path'] = './dataset/wrete_entailment-ui/valid_preprocess.csv'
+        args['test_set_path'] = './dataset/wrete_entailment-ui/test_preprocess_masked_label.csv'
+        args['vocab_path'] = "./dataset/wrete_entailment-ui/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_entailment-ui_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_entailment-ui_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_entailment-ui_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_entailment-ui_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -222,15 +222,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_classification
         args['metrics_fn'] = document_sentiment_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/smsa_doc-sentiment-prosa/train_preprocess.tsv'
-        args['valid_set_path'] = './data/smsa_doc-sentiment-prosa/valid_preprocess.tsv'
-        args['test_set_path'] = './data/smsa_doc-sentiment-prosa/test_preprocess.tsv'
-        args['vocab_path'] = "./data/smsa_doc-sentiment-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/smsa_doc-sentiment-prosa/train_preprocess.tsv'
+        args['valid_set_path'] = './dataset/smsa_doc-sentiment-prosa/valid_preprocess.tsv'
+        args['test_set_path'] = './dataset/smsa_doc-sentiment-prosa/test_preprocess_masked_label.tsv'
+        args['vocab_path'] = "./dataset/smsa_doc-sentiment-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_doc-sentiment-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_doc-sentiment-prosa_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_doc-sentiment-prosa_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_doc-sentiment-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -242,15 +242,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = keyword_extraction_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/keps_keyword-extraction-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/keps_keyword-extraction-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/keps_keyword-extraction-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/keps_keyword-extraction-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/keps_keyword-extraction-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/keps_keyword-extraction-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/keps_keyword-extraction-prosa/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/keps_keyword-extraction-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_keyword-extraction-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_keyword-extraction-prosa_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_keyword-extraction-prosa_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_keyword-extraction-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = WordSplitTokenizer
@@ -262,15 +262,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = qa_factoid_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/facqa_qa-factoid-itb/train_preprocess.csv'
-        args['valid_set_path'] = './data/facqa_qa-factoid-itb/valid_preprocess.csv'
-        args['test_set_path'] = './data/facqa_qa-factoid-itb/test_preprocess.csv'
-        args['vocab_path'] = "./data/facqa_qa-factoid-itb/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/facqa_qa-factoid-itb/train_preprocess.csv'
+        args['valid_set_path'] = './dataset/facqa_qa-factoid-itb/valid_preprocess.csv'
+        args['test_set_path'] = './dataset/facqa_qa-factoid-itb/test_preprocess_masked_label.csv'
+        args['vocab_path'] = "./dataset/facqa_qa-factoid-itb/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_qa-factoid-itb_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_qa-factoid-itb_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_qa-factoid-itb_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_qa-factoid-itb_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -282,15 +282,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = ner_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/nerp_ner-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/nerp_ner-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/nerp_ner-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/nerp_ner-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/nerp_ner-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/nerp_ner-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/nerp_ner-prosa/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/nerp_ner-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-prosa_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-prosa_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -302,15 +302,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_word_classification
         args['metrics_fn'] = pos_tag_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/posp_pos-prosa/train_preprocess.txt'
-        args['valid_set_path'] = './data/posp_pos-prosa/valid_preprocess.txt'
-        args['test_set_path'] = './data/posp_pos-prosa/test_preprocess.txt'
-        args['vocab_path'] = "./data/posp_pos-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/posp_pos-prosa/train_preprocess.txt'
+        args['valid_set_path'] = './dataset/posp_pos-prosa/valid_preprocess.txt'
+        args['test_set_path'] = './dataset/posp_pos-prosa/test_preprocess_masked_label.txt'
+        args['vocab_path'] = "./dataset/posp_pos-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-prosa_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-prosa_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer
@@ -322,15 +322,15 @@ def append_dataset_args(args):
         args['forward_fn'] = forward_sequence_multi_classification
         args['metrics_fn'] = absa_metrics_fn
         args['valid_criterion'] = 'F1'
-        args['train_set_path'] = './data/casa_absa-prosa/train_preprocess.csv'
-        args['valid_set_path'] = './data/casa_absa-prosa/valid_preprocess.csv'
-        args['test_set_path'] = './data/casa_absa-prosa/test_preprocess.csv'
-        args['vocab_path'] = "./data/casa_absa-prosa/vocab_uncased.txt"
+        args['train_set_path'] = './dataset/casa_absa-prosa/train_preprocess.csv'
+        args['valid_set_path'] = './dataset/casa_absa-prosa/valid_preprocess.csv'
+        args['test_set_path'] = './dataset/casa_absa-prosa/test_preprocess_masked_label.csv'
+        args['vocab_path'] = "./dataset/casa_absa-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': '../embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': '../embeddings/fasttext-cc-id/cc.id.300.vec',
-            'fasttext-cc-id-300-no-oov-uncased': '../embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-prosa_uncased.txt',
-            'fasttext-4B-id-300-no-oov-uncased': '../embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-prosa_uncased.txt'
+            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
+            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
+            'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-prosa_uncased.txt',
+            'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-prosa_uncased.txt'
         }
         args['k_fold'] = 1
         args['word_tokenizer_class'] = TweetTokenizer

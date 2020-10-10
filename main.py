@@ -156,56 +156,53 @@ if __name__ == "__main__":
     w2i, i2w = args['dataset_class'].LABEL2INDEX, args['dataset_class'].INDEX2LABEL
     metrics_scores = []
     result_dfs = []
-    for i in range(args['k_fold']):
-        # load model
-        model, tokenizer, vocab_path, config_path = load_model(args)
-        optimizer = optim.Adam(model.parameters(), lr=args['lr'])
+    # load model
+    model, tokenizer, vocab_path, config_path = load_model(args)
+    optimizer = optim.Adam(model.parameters(), lr=args['lr'])
 
-        if args['fp16']:
-            from apex import amp  # Apex is only required if we use fp16 training
-            model, optimizer = amp.initialize(model, optimizer, opt_level=args['fp16'])
+    if args['fp16']:
+        from apex import amp  # Apex is only required if we use fp16 training
+        model, optimizer = amp.initialize(model, optimizer, opt_level=args['fp16'])
 
-        if args['device'] == "cuda":
-            model = model.cuda()
+    if args['device'] == "cuda":
+        model = model.cuda()
 
-        print("=========== FOLD-" + str(i+1) + " ===========")
+    print("=========== TRAINING PHASE ===========")
 
-        train_dataset_path = args['train_set_path'].format(i)
-        train_dataset = args['dataset_class'](train_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
-        train_loader = args['dataloader_class'](dataset=train_dataset, max_seq_len=args['max_seq_len'], batch_size=args['train_batch_size'], num_workers=16, shuffle=False)  
+    train_dataset_path = args['train_set_path']
+    train_dataset = args['dataset_class'](train_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
+    train_loader = args['dataloader_class'](dataset=train_dataset, max_seq_len=args['max_seq_len'], batch_size=args['train_batch_size'], num_workers=16, shuffle=False)  
 
-        valid_dataset_path = args['valid_set_path'].format(i)
-        valid_dataset = args['dataset_class'](valid_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
-        valid_loader = args['dataloader_class'](dataset=valid_dataset, max_seq_len=args['max_seq_len'], batch_size=args['valid_batch_size'], num_workers=16, shuffle=False)
+    valid_dataset_path = args['valid_set_path']
+    valid_dataset = args['dataset_class'](valid_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
+    valid_loader = args['dataloader_class'](dataset=valid_dataset, max_seq_len=args['max_seq_len'], batch_size=args['valid_batch_size'], num_workers=16, shuffle=False)
 
-        test_dataset_path = args['test_set_path'].format(i)
-        test_dataset = args['dataset_class'](test_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
-        test_loader = args['dataloader_class'](dataset=test_dataset, max_seq_len=args['max_seq_len'], batch_size=args['valid_batch_size'], num_workers=16, shuffle=False)
+    test_dataset_path = args['test_set_path']
+    test_dataset = args['dataset_class'](test_dataset_path, tokenizer, lowercase=args["lower"], no_special_token=args['no_special_token'])
+    test_loader = args['dataloader_class'](dataset=test_dataset, max_seq_len=args['max_seq_len'], batch_size=args['valid_batch_size'], num_workers=16, shuffle=False)
 
-        # Train
-        train(model, train_loader=train_loader, valid_loader=valid_loader, optimizer=optimizer, forward_fn=args['forward_fn'], metrics_fn=args['metrics_fn'], valid_criterion=args['valid_criterion'], i2w=i2w, n_epochs=args['n_epochs'], evaluate_every=1, early_stop=args['early_stop'], step_size=args['step_size'], gamma=args['gamma'], model_dir=model_dir, exp_id=i)
+    # Train
+    train(model, train_loader=train_loader, valid_loader=valid_loader, optimizer=optimizer, forward_fn=args['forward_fn'], metrics_fn=args['metrics_fn'], valid_criterion=args['valid_criterion'], i2w=i2w, n_epochs=args['n_epochs'], evaluate_every=1, early_stop=args['early_stop'], step_size=args['step_size'], gamma=args['gamma'], model_dir=model_dir, exp_id=0)
 
-        # Save Meta
-        if vocab_path:
-            shutil.copyfile(vocab_path, f'{model_dir}/vocab.txt')
-        if config_path:
-            shutil.copyfile(config_path, f'{model_dir}/config.json')
-            
-        # Load best model
-        model.load_state_dict(torch.load(model_dir + "/best_model_" + str(i) + ".th"))
+    # Save Meta
+    if vocab_path:
+        shutil.copyfile(vocab_path, f'{model_dir}/vocab.txt')
+    if config_path:
+        shutil.copyfile(config_path, f'{model_dir}/config.json')
+        
+    # Load best model
+    model.load_state_dict(torch.load(model_dir + "/best_model_0.th"))
 
-        # Evaluate
-        test_loss, test_metrics, test_hyp, test_label, test_seq = evaluate(model, data_loader=test_loader, forward_fn=args['forward_fn'], metrics_fn=args['metrics_fn'], i2w=i2w, is_test=True)
+    # Evaluate
+    print("=========== EVALUATION PHASE ===========")
+    test_loss, test_metrics, test_hyp, test_label, test_seq = evaluate(model, data_loader=test_loader, forward_fn=args['forward_fn'], metrics_fn=args['metrics_fn'], i2w=i2w, is_test=True)
 
-        # delete model
-        os.remove(model_dir + "/best_model_" + str(i) + ".th")
-
-        metrics_scores.append(test_metrics)
-        result_dfs.append(pd.DataFrame({
-            'seq':test_seq, 
-            'hyp': test_hyp, 
-            'label': test_label
-        }))
+    metrics_scores.append(test_metrics)
+    result_dfs.append(pd.DataFrame({
+        'seq':test_seq, 
+        'hyp': test_hyp, 
+        'label': test_label
+    }))
     
     result_df = pd.concat(result_dfs)
     metric_df = pd.DataFrame.from_records(metrics_scores)
