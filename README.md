@@ -33,7 +33,7 @@ For the submission, first you need to rename your prediction into `pred.txt`, th
 
 ## Indo4B Dataset
 We provide the access to our large pretraining dataset. In this version, we exclude all Twitter tweets due to restrictions of the Twitter Developer Policy and Agreement.
-- 23 GB Indo4B Dataset [[link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
+- 23 GB Indo4B Dataset [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
 
 ## IndoBERT and IndoBERT-lite Models
 - 8 IndoBERT Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
