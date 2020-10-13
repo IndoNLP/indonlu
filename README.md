@@ -1,7 +1,7 @@
 # IndoNLU 
 ![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-IndoNLU is a collection of Natural Language Understanding (NLU) resources for Bahasa Indonesia with 12 downstream tasks. We provide the code to reproduce the results and large pre-trained models (IndoBERT and IndoBERT-lite) trained with around 4 billion word corpus (Indo4B), more than 20 GB of text data.
+IndoNLU is a collection of Natural Language Understanding (NLU) resources for Bahasa Indonesia with 12 downstream tasks. We provide the code to reproduce the results and large pre-trained models (IndoBERT and IndoBERT-lite) trained with around 4 billion word corpus (Indo4B), more than 20 GB of text data. This project was initially started by a joint collaboration between universities and industry, such as Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, and Prosa.AI.
 
 ## Research Paper
 IndoNLU has been accepted by AACL-IJCNLP 2020 and you can find the details in our preprint https://arxiv.org/abs/2009.05387.
@@ -49,6 +49,9 @@ We provide the access to our large pretraining dataset. In this version, we excl
   - IndoBERT-lite-large
     - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p1)
     - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
+
+## FastText (Indo4B)
+- Will be released soon!
 
 ## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
