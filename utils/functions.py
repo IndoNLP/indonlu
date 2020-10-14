@@ -341,7 +341,7 @@ def load_model(args):
             model = XLMRobertaForWordClassification.from_pretrained(args['model_checkpoint'], config=config)
         elif 'multi_label_classification' == args['task']:
             model = XLMRobertaForMultiLabelClassification.from_pretrained(args['model_checkpoint'], config=config)
-    elif 'word2vec' in args['model_checkpoint'] or 'fasttext' in args['model_checkpoint']:
+    elif 'fasttext' in args['model_checkpoint']:
         # Prepare config & tokenizer
         vocab_path = args['vocab_path']
         config_path = None
@@ -361,16 +361,9 @@ def load_model(args):
             config.num_labels = args['num_labels']
         config.num_hidden_layers = args["num_layers"]
 
-        if args['model_checkpoint'] == 'word2vec-twitter':
-            embeddings = gen_embeddings(vocab_list, emb_path)
-            config.hidden_size = 400
-            config.num_attention_heads = 8
-
-        if args['model_checkpoint'] == 'fasttext-cc-id' or args['model_checkpoint'] == 'fasttext-cc-id-300-no-oov-uncased' or args['model_checkpoint'] == 'fasttext-4B-id-300-no-oov-uncased':
-            embeddings = gen_embeddings(vocab_list, emb_path, emb_dim=300)
-            config.hidden_size = 300
-            config.num_attention_heads = 10
-
+        embeddings = gen_embeddings(vocab_list, emb_path, emb_dim=300)
+        config.hidden_size = 300
+        config.num_attention_heads = 10
         config.vocab_size = len(embeddings)
 
         # Instantiate model
