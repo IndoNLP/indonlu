@@ -51,7 +51,7 @@ We provide the access to our large pretraining dataset. In this version, we excl
     - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
 
 ## FastText (Indo4B)
-- Uncased [[Model file]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) [[Vector file]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
+- Uncased 11.9 GB Model File [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) 3.9 GB Vector File [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
 
 ## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
