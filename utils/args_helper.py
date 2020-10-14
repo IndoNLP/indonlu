@@ -35,11 +35,7 @@ def get_parser():
     parser.add_argument("--experiment_name", type=str, default="exp", help="Experiment name")
     parser.add_argument("--model_dir", type=str, default="save/", help="Model directory")
     parser.add_argument("--dataset", type=str, default='emotion-twitter', help="Choose between emotion-twitter, absa-airy, term-extraction-airy, ner-grit, pos-idn, entailment-ui, doc-sentiment-prosa, keyword-extraction-prosa, qa-factoid-itb, news-category-prosa, ner-prosa, pos-prosa")
-    parser.add_argument("--dataset_path", type=str, default="", help="Path or url of the dataset. If empty download from S3.")
-    parser.add_argument("--dataset_cache", type=str, default='./dataset_cache', help="Path or url of the dataset cache")
     parser.add_argument("--model_checkpoint", type=str, default="bert-base-multilingual-uncased", help="Path, url or short name of the model")
-    parser.add_argument("--num_candidates", type=int, default=2, help="Number of candidates for training")
-    parser.add_argument("--max_history", type=int, default=1000000000, help="Number of previous exchanges to keep in history")
     parser.add_argument("--max_seq_len", type=int, default=512, help="Max number of tokens")
     parser.add_argument("--train_batch_size", type=int, default=4, help="Batch size for training")
     parser.add_argument("--valid_batch_size", type=int, default=4, help="Batch size for validation")
@@ -48,18 +44,9 @@ def get_parser():
     parser.add_argument("--max_norm", type=float, default=10.0, help="Clipping gradient norm")
     parser.add_argument("--n_epochs", type=int, default=10, help="Number of training epochs")
     parser.add_argument("--num_layers", type=int, default=12, help="Number of layers")
-    parser.add_argument("--eval_before_start", action='store_true', help="If true start with a first evaluation before training")
     parser.add_argument("--device", type=str, default='cuda', help="Device (cuda or cpu)")
     parser.add_argument("--fp16", type=str, default="", help="Set to O0, O1, O2 or O3 for fp16 training (see apex documentation)")
-    parser.add_argument("--local_rank", type=int, default=-1, help="Local rank for distributed training (-1: not distributed)")
-    parser.add_argument("--max_length", type=int, default=150, help="Maximum length of the output utterances")
-    parser.add_argument("--min_length", type=int, default=1, help="Minimum length of the output utterances")
     parser.add_argument("--seed", type=int, default=42, help="Seed")
-    parser.add_argument("--temperature", type=int, default=0.7, help="Sampling softmax temperature")
-    parser.add_argument("--top_k", type=int, default=0, help="Filter top-k tokens before sampling (<=0: no filtering)")
-    parser.add_argument("--top_p", type=float, default=0.9, help="Nucleus filtering (top-p) before sampling (<=0.0: no filtering)")
-    parser.add_argument("--no_sample", action='store_true', help="Set to use greedy decoding instead of sampling")
-    parser.add_argument("--weight_tie", action='store_true', help="Use weight tie")
     parser.add_argument("--step_size", type=int, default=1, help="Step size")
     parser.add_argument("--early_stop", type=int, default=3, help="Step size")
     parser.add_argument("--gamma", type=float, default=0.5, help="Gamma")
@@ -107,8 +94,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/emot_emotion-twitter/test_preprocess_masked_label.csv'
         args['vocab_path']  = "./dataset/emot_emotion-twitter/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_emotion-twitter_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_emotion-twitter_uncased.txt'
         }
@@ -127,8 +112,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/hoasa_absa-airy/test_preprocess_masked_label.csv'
         args['vocab_path'] = "./dataset/hoasa_absa-airy/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-airy_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-airy_uncased.txt'
         }
@@ -147,8 +130,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/terma_term-extraction-airy/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/terma_term-extraction-airy/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_term-extraction-airy_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_term-extraction-airy_uncased.txt'
         }
@@ -167,8 +148,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/nergrit_ner-grit/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/nergrit_ner-grit/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-grit_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-grit_uncased.txt'
         }
@@ -187,8 +166,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/bapos_pos-idn/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/bapos_pos-idn/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-idn_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-idn_uncased.txt'
         }
@@ -207,8 +184,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/wrete_entailment-ui/test_preprocess_masked_label.csv'
         args['vocab_path'] = "./dataset/wrete_entailment-ui/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_entailment-ui_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_entailment-ui_uncased.txt'
         }
@@ -227,8 +202,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/smsa_doc-sentiment-prosa/test_preprocess_masked_label.tsv'
         args['vocab_path'] = "./dataset/smsa_doc-sentiment-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_doc-sentiment-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_doc-sentiment-prosa_uncased.txt'
         }
@@ -247,8 +220,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/keps_keyword-extraction-prosa/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/keps_keyword-extraction-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_keyword-extraction-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_keyword-extraction-prosa_uncased.txt'
         }
@@ -267,8 +238,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/facqa_qa-factoid-itb/test_preprocess_masked_label.csv'
         args['vocab_path'] = "./dataset/facqa_qa-factoid-itb/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_qa-factoid-itb_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_qa-factoid-itb_uncased.txt'
         }
@@ -287,8 +256,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/nerp_ner-prosa/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/nerp_ner-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_ner-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_ner-prosa_uncased.txt'
         }
@@ -307,8 +274,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/posp_pos-prosa/test_preprocess_masked_label.txt'
         args['vocab_path'] = "./dataset/posp_pos-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_pos-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_pos-prosa_uncased.txt'
         }
@@ -327,8 +292,6 @@ def append_dataset_args(args):
         args['test_set_path'] = './dataset/casa_absa-prosa/test_preprocess_masked_label.csv'
         args['vocab_path'] = "./dataset/casa_absa-prosa/vocab_uncased.txt"
         args['embedding_path'] = {
-            'word2vec-twitter': './embeddings/word2vec-twitter/word2vec_400dim.txt',
-            'fasttext-cc-id': './embeddings/fasttext-cc-id/cc.id.300.vec',
             'fasttext-cc-id-300-no-oov-uncased': './embeddings/fasttext-cc-id/cc.id.300_no-oov_absa-prosa_uncased.txt',
             'fasttext-4B-id-300-no-oov-uncased': './embeddings/fasttext-4B-id-uncased/fasttext.4B.id.300.epoch5_uncased_no-oov_absa-prosa_uncased.txt'
         }
