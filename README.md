@@ -36,22 +36,26 @@ We provide the access to our large pretraining dataset. In this version, we excl
 - 23 GB Indo4B Dataset [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
 
 ## IndoBERT and IndoBERT-lite Models
-- 8 IndoBERT Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
-  - IndoBERT-base
-    - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-base-p1)
-    - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-base-p2)
-  - IndoBERT-large
-    - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-large-p1)
-    - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-large-p2)
-  - IndoBERT-lite-base
-    - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-base-p1)
-    - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-base-p2)
-  - IndoBERT-lite-large
-    - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p1)
-    - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
+We provide 4 IndoBERT and 4 IndoBERT-lite Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
+- IndoBERT-base
+  - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-base-p1)
+  - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-base-p2)
+- IndoBERT-large
+  - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-large-p1)
+  - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-large-p2)
+- IndoBERT-lite-base
+  - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-base-p1)
+  - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-base-p2)
+- IndoBERT-lite-large
+  - Phase 1  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p1)
+  - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
 
 ## FastText (Indo4B)
 - Will be released soon!
+
+We provide FastText models with smaller vocabulary for each of the 12 downstream tasks
+- FastText-Indo4B [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-4B-id-uncased.zip)
+- FastText-CC-ID [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-cc-id.zip)
 
 ## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
