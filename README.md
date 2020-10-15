@@ -6,6 +6,8 @@
   <a href="https://github.com/indobenchmark/indonlu/blob/README_in_bahasa/README.id.md">Indonesian</a>
 </p>
 
+*Read this in other languages: [English](README.md), [Indonesian](README.id.md).*
+
 <b>IndoNLU</b> is a collection of Natural Language Understanding (NLU) resources for Bahasa Indonesia with 12 downstream tasks. We provide the code to reproduce the results and large pre-trained models (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) trained with around 4 billion word corpus (<b>Indo4B</b>), more than 20 GB of text data. This project was initially started by a joint collaboration between universities and industry, such as Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, and Prosa.AI.
 
 ## Research Paper
