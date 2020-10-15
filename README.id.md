@@ -1,12 +1,7 @@
 # IndoNLU 
 ![Ditunggu Pull Requestsnya](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![Lisensi Github](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Perjanjian Kontributor](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-<p align="left">
-  <a href="https://github.com/indobenchmark/indonlu/blob/master/README.md">English</a> |
-  <span>Indonesian</span> |
-</p>
-
-*Read this in other languages: [English](README.md), [Indonesian](README.id.md).*
+*Read this README.md in [English](README.md).*
 
 <b>IndoNLU</b> adalah sebuah koleksi sumber untuk riset dalam topik Natural Language Understanding (NLU) untuk Bahasa Indonesia dengan 12 tugas hilir. Kami menyediakan kode untuk mereproduksi hasil dan model besar yang sudah dilatih sebelumnya (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) yang dilatih dengan kumpulan tulisan berisi sekitar 4 miliar kata (<b>Indo4B</b>) dan lebih dari 20 GB dalam ukuran data teks. Proyek ini awalnya dimulai dari kerjasama antara universitas dan industri, seperti Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, dan Prosa.AI.
 
