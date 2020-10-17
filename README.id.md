@@ -1,5 +1,5 @@
 # IndoNLU 
-![Ditunggu Pull Requestsnya](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![Lisensi Github](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Perjanjian Kontributor](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+![Ditunggu Pull Requestsnya](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![Lisensi Github](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Perjanjian Kontributor](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 *Read this README.md in [English](README.md).*
 
