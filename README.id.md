@@ -3,7 +3,7 @@
 
 *Read this README in [English](README.md).*
 
-<b>IndoNLU</b> adalah sebuah koleksi sumber untuk riset dalam topik Natural Language Understanding (NLU) untuk Bahasa Indonesia dengan 12 tugas hilir. Kami menyediakan kode untuk mereproduksi hasil dan model besar yang sudah dilatih sebelumnya (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) yang dilatih dengan kumpulan tulisan berisi sekitar 4 miliar kata (<b>Indo4B</b>) dan lebih dari 20 GB dalam ukuran data teks. Proyek ini awalnya dimulai dari kerjasama antara universitas dan industri, seperti Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, dan Prosa.AI.
+<b>IndoNLU</b> adalah sebuah koleksi sumber untuk riset dalam topik Natural Language Understanding (NLU) untuk Bahasa Indonesia dengan 12 aplikasi. Kami menyediakan kode untuk mereproduksi hasil dan model besar yang sudah dilatih sebelumnya (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) yang dilatih dengan kumpulan tulisan berisi sekitar 4 miliar kata (<b>Indo4B</b>) dan lebih dari 20 GB dalam ukuran data teks. Proyek ini awalnya dimulai dari kerjasama antara universitas dan industri, seperti Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, dan Prosa.AI.
 
 ## Makalah Penelitian
 IndoNLU telah diterima oleh AACL-IJCNLP 2020 dan Anda dapat menemukan detailnya di pracetak kami https://arxiv.org/abs/2009.05387.
@@ -21,7 +21,7 @@ Jika Anda menggunakan komponen apa pun di IndoNLU termasuk Indo4B, FastText-Indo
 ## Bagaimana cara untuk berkontribusi ke IndoNLU?
 Pastikan anda mengecek [pedoman kontribusi](https://github.com/indobenchmark/indonlu/blob/master/CONTRIBUTING.md) dan hubungi pengelola atau buka issue untuk mengumpulkan umpan balik sebelum memulai PR Anda.
 
-## 12 Tugas hilir
+## 12 Aplikasi
 - Cek disini: [[Tautan]](https://github.com/indobenchmark/indonlu/tree/master/dataset)
 - Kami menyediakan train, valid, dan test set. Label set pengujian disamarkan (tidak ada label sebenarnya) untuk menjaga integritas evaluasi. Silakan kirim prediksi Anda ke portal pengiriman di [CodaLab](https://competitions.codalab.org/competitions/26537)
 
@@ -58,7 +58,7 @@ Kami menyediakan file model FastText lengkap tanpa pengubahan pengkapitalan huru
 - Model FastText (11.9 GB) [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) 
 - File Vector (3.9 GB) [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
 
-Kami menyediakan model FastText yang lebih kecil dengan kosakata yang lebih kecil untuk masing-masing dari 12 tugas hilir
+Kami menyediakan model FastText yang lebih kecil dengan kosakata yang lebih kecil untuk masing-masing dari 12 aplikasi
 - FastText-Indo4B [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-4B-id-uncased.zip)
 - FastText-CC-ID [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-cc-id.zip)
 
