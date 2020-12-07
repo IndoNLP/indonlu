@@ -1,0 +1,146 @@
+# list of used configuration
+# model_checkpoint: 
+# lower: 
+# num_layers: 
+
+# # albert-base-uncased-96000
+# - model_checkpoint: albert-base-uncased-96000
+#   lower: True
+#   num_layers:
+#     - 12
+
+# # albert-base-uncased-96000-spm
+# - model_checkpoint: albert-base-uncased-96000-spm
+#   lower: True
+#   num_layers:
+#     - 12
+
+# # albert-base-uncased-112500-spm
+# - model_checkpoint: albert-base-uncased-112500-spm
+#   lower: True
+#   num_layers:
+#     - 12
+
+# scratch
+- model_checkpoint: scratch
+  lower: True
+  num_layers:
+    - 2
+    - 4
+    - 6
+
+# fasttext-cc-id-300-no-oov-uncased
+- model_checkpoint: fasttext-cc-id-300-no-oov-uncased
+  lower: True
+  num_layers:
+    - 2
+    - 4
+    - 6
+
+# fasttext-4B-id-300-no-oov-uncased
+- model_checkpoint: fasttext-4B-id-300-no-oov-uncased
+  lower: True
+  num_layers:
+    - 2
+    - 4
+    - 6
+
+# babert-base-512
+- model_checkpoint: babert-base-512
+  lower: True
+  num_layers:
+    - 12
+  
+# babert-bpe-mlm-large-512
+- model_checkpoint: babert-bpe-mlm-large-512
+  lower: True
+  num_layers:
+    - 24
+
+# mbert
+- model_checkpoint: bert-base-multilingual-uncased
+  lower: False
+  num_layers:
+    - 12
+
+# xlm-roberta
+- model_checkpoint: xlm-roberta-base
+  lower: False
+  num_layers:
+    - 12
+- model_checkpoint: xlm-roberta-base
+  lower: False
+  num_layers:
+    - 12
+
+# babert-opensubtitle
+- model_checkpoint: babert-opensubtitle
+  lower: False
+  num_layers:
+    - 12
+
+# xlm
+- model_checkpoint: xlm-mlm-100-1280
+  lower: False
+  num_layers:
+    - 16
+
+# albert-large-wwmlm-128
+- model_checkpoint: albert-large-wwmlm-128
+  lower: True
+  num_layers:
+    - 24
+
+# albert-base-wwmlm-512
+- model_checkpoint: albert-base-wwmlm-512
+  lower: True
+  num_layers:
+    - 12
+
+# albert-large-wwmlm-512
+- model_checkpoint: albert-large-wwmlm-512
+  lower: True
+  num_layers:
+    - 24
+
+# albert-base-uncased-112500
+- model_checkpoint: albert-base-uncased-112500
+  lower: True
+  num_layers:
+    - 12
+
+# albert-base-uncased-191k
+- model_checkpoint: albert-base-uncased-191k
+  lower: True
+  num_layers:
+    - 12
+
+# cartobert
+- model_checkpoint: cartobert
+  lower: True
+  num_layers:
+    - 12
+
+# babert-bpe-mlm-large-uncased
+- model_checkpoint: babert-bpe-mlm-large-uncased
+  lower: True
+  num_layers:
+    - 24
+
+# babert-bpe-mlm-large-uncased-1m
+- model_checkpoint: babert-bpe-mlm-large-uncased-1m
+  lower: True
+  num_layers:
+    - 24
+
+# babert-bpe-mlm-large-uncased-1100k
+- model_checkpoint: babert-bpe-mlm-large-uncased-1100k
+  lower: True
+  num_layers:
+    - 24
+
+# babert-bpe-mlm-uncased-128-dup10-5
+- model_checkpoint: babert-bpe-mlm-uncased-128-dup10-5
+  lower: True
+  num_layers:
+    - 12

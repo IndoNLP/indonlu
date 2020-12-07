@@ -1,0 +1,10 @@
+- model_checkpoint: scratch
+  hyperparameter_config: no_special_token_1.yaml
+- model_checkpoint: word2vec
+  hyperparameter_config: no_special_token_1.yaml
+- model_checkpoint: fasttext-twitter
+  hyperparameter_config: no_special_token_2.yaml
+- model_checkpoint: fasttext-cc-id
+  hyperparameter_config: no_special_token_2.yaml
+- model_checkpoint: fasttext-cc-id-no-oov
+  hyperparameter_config: no_special_token_2.yaml

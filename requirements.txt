@@ -1,0 +1,11 @@
+PyYAML==5.3.1
+numpy
+pandas
+torch
+tqdm
+transformers
+nltk
+sklearn
+matplotlib
+seaborn
+ipywidgets
