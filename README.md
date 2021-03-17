@@ -1,10 +1,12 @@
 # IndoNLU 
-![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/indobenchmark/indonlu/blob/master/LICENSE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
+*Baca README ini dalam [Bahasa Indonesia](README.id.md).*
 
 <b>IndoNLU</b> is a collection of Natural Language Understanding (NLU) resources for Bahasa Indonesia with 12 downstream tasks. We provide the code to reproduce the results and large pre-trained models (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) trained with around 4 billion word corpus (<b>Indo4B</b>), more than 20 GB of text data. This project was initially started by a joint collaboration between universities and industry, such as Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, and Prosa.AI.
 
 ## Research Paper
-IndoNLU has been accepted by AACL-IJCNLP 2020 and you can find the details in our preprint https://arxiv.org/abs/2009.05387.
+IndoNLU has been accepted by AACL-IJCNLP 2020 and you can find the details in our paper https://www.aclweb.org/anthology/2020.aacl-main.85.pdf.
 If you are using any component on IndoNLU including Indo4B, FastText-Indo4B, or IndoBERT in your work, please cite the following paper:
 ```
 @inproceedings{wilie2020indonlu,
@@ -33,7 +35,7 @@ For the submission, first you need to rename your prediction into `pred.txt`, th
 
 ## Indo4B Dataset
 We provide the access to our large pretraining dataset. In this version, we exclude all Twitter tweets due to restrictions of the Twitter Developer Policy and Agreement.
-- 23 GB Indo4B Dataset [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
+- Indo4B Dataset (23 GB uncompressed, 5.6 GB compressed) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
 
 ## IndoBERT and IndoBERT-lite Models
 We provide 4 IndoBERT and 4 IndoBERT-lite Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
@@ -51,9 +53,9 @@ We provide 4 IndoBERT and 4 IndoBERT-lite Pretrained Language Model [[Link]](htt
   - Phase 2  [[Link]](https://huggingface.co/indobenchmark/indobert-lite-large-p2)
 
 ## FastText (Indo4B)
-We provide the full uncased FastText model file (11.9 GB)and the corresponding Vector file (3.9 GB)
+We provide the full uncased FastText model file (11.9 GB) and the corresponding Vector file (3.9 GB)
 - FastText model (11.9 GB) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) 
-- Vector file (3.9 GB)[[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
+- Vector file (3.9 GB) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
 
 We provide smaller FastText models with smaller vocabulary for each of the 12 downstream tasks
 - FastText-Indo4B [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-4B-id-uncased.zip)
