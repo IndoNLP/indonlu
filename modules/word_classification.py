@@ -6,7 +6,6 @@ import torch
 from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
-from transformers.configuration_bert import BertConfig
 from transformers.modeling_utils import PreTrainedModel, prune_linear_layer
 from transformers.modeling_xlm import XLMPreTrainedModel
 from transformers import AlbertPreTrainedModel, BertPreTrainedModel, AlbertModel, BertModel, BertConfig, XLMModel, XLMConfig, XLMRobertaModel, XLMRobertaConfig
