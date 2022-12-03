@@ -7,8 +7,7 @@ from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
 from transformers.modeling_utils import PreTrainedModel, prune_linear_layer
-from transformers.modeling_xlm import XLMPreTrainedModel
-from transformers import AlbertPreTrainedModel, BertPreTrainedModel, AlbertModel, BertModel, BertConfig, XLMModel, XLMConfig, XLMRobertaModel, XLMRobertaConfig
+from transformers import AlbertPreTrainedModel, BertPreTrainedModel, XLMPreTrainedModel, AlbertModel, BertModel, BertConfig, XLMModel, XLMConfig, XLMRobertaModel, XLMRobertaConfig
 from transformers import AutoTokenizer, AutoConfig
 
 XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP = {
