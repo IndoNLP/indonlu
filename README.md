@@ -35,7 +35,7 @@ For the submission, first you need to rename your prediction into `pred.txt`, th
 
 ## Indo4B Dataset
 We provide the access to our large pretraining dataset. In this version, we exclude all Twitter tweets due to restrictions of the Twitter Developer Policy and Agreement.
-- Indo4B Dataset (23 GB uncompressed, 5.6 GB compressed) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
+- Indo4B Dataset (23 GB uncompressed, 5.6 GB compressed) [[Link]](https://drive.google.com/file/d/1WDphb60lXzspY1dBA0lLJWV4jx4VZR8u/view?usp=drive_link)
 
 ## IndoBERT and IndoBERT-lite Models
 We provide 4 IndoBERT and 4 IndoBERT-lite Pretrained Language Model [[Link]](https://huggingface.co/indobenchmark)
@@ -54,12 +54,12 @@ We provide 4 IndoBERT and 4 IndoBERT-lite Pretrained Language Model [[Link]](htt
 
 ## FastText (Indo4B)
 We provide the full uncased FastText model file (11.9 GB) and the corresponding Vector file (3.9 GB)
-- FastText model (11.9 GB) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) 
-- Vector file (3.9 GB) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
+- FastText model (11.9 GB) [[Link]](https://drive.google.com/file/d/1DqtWoot2MJXsk4Nx6yETcEyK-JzTv_P3/view?usp=drive_link) 
+- Vector file (3.9 GB) [[Link]](https://drive.google.com/file/d/1E_PvoXd2KU8HQEZEQroUGxiQ7FhNy-3v/view?usp=sharing)
 
 We provide smaller FastText models with smaller vocabulary for each of the 12 downstream tasks
-- FastText-Indo4B [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-4B-id-uncased.zip)
-- FastText-CC-ID [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-cc-id.zip)
+- FastText-Indo4B [[Link]](https://drive.google.com/file/d/1qkmCeEXxNTEBewp9IKW-FTFf5puknIaG/view?usp=sharing)
+- FastText-CC-ID [[Link]](https://drive.google.com/file/d/1DJ1MofWn2vf8gymkVfzk0I68xDOtXtEr/view?usp=sharing)
 
 ## Leaderboard
 - Community Portal and Public Leaderboard [[Link]](https://www.indobenchmark.com/leaderboard.html)
