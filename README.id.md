@@ -3,6 +3,8 @@
 
 *Read this README in [English](README.md).*
 
+⚠️ Update 16/11/2024: Kami melakukan pembaruan terhadap tautan data untuk mengakses sumber data IndoNLU!
+
 <b>IndoNLU</b> adalah sebuah koleksi sumber untuk riset dalam topik Natural Language Understanding (NLU) untuk Bahasa Indonesia dengan 12 aplikasi. Kami menyediakan kode untuk mereproduksi hasil dan model besar yang sudah dilatih sebelumnya (<b>IndoBERT</b> and <b>IndoBERT-lite</b>) yang dilatih dengan kumpulan tulisan berisi sekitar 4 miliar kata (<b>Indo4B</b>) dan lebih dari 20 GB dalam ukuran data teks. Proyek ini awalnya dimulai dari kerjasama antara universitas dan industri, seperti Institut Teknologi Bandung, Universitas Multimedia Nusantara, The Hong Kong University of Science and Technology, Universitas Indonesia, Gojek, dan Prosa.AI.
 
 ## Makalah Penelitian
@@ -36,10 +38,11 @@ Untuk pengiriman, pertama-tama Anda perlu mengganti nama prediksi Anda menjadi `
 
 ## Indo4B Dataset
 Kami menyediakan akses ke kumpulan data pra-pelatihan kami yang besar. Dalam versi ini, kami mengecualikan semua tweet Twitter karena pembatasan Kebijakan dan Perjanjian Pengembang Twitter.
-- Indo4B Dataset (23 GB tidak dikompresi, 5.6 GB dikompresi) [[Link]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/dataset/preprocessed/dataset_wot_uncased_blanklines.tar.xz)
+- Indo4B Dataset (23 GB tidak dikompresi, 5.6 GB dikompresi) [[Tautan]](https://drive.google.com/file/d/1WDphb60lXzspY1dBA0lLJWV4jx4VZR8u/view?usp=drive_link)
 
 ## Model IndoBERT dan IndoBERT-lite
-Kami menyediakan 4 Model IndoBERT dan IndoBERT-lite yang sudah dilatih terlebih dahulu [[Link]](https://huggingface.co/indobenchmark)
+Kami menyediakan 4 Model IndoBERT dan IndoBERT-lite yang sudah dilatih terlebih dahulu [[Tautan]](https://huggingface.co/indobenchmark)
+
 - IndoBERT-base
   - Fase 1  [[Tautan]](https://huggingface.co/indobenchmark/indobert-base-p1)
   - Fase 2  [[Tautan]](https://huggingface.co/indobenchmark/indobert-base-p2)
@@ -55,12 +58,12 @@ Kami menyediakan 4 Model IndoBERT dan IndoBERT-lite yang sudah dilatih terlebih 
 
 ## FastText (Indo4B)
 Kami menyediakan file model FastText lengkap tanpa pengubahan pengkapitalan huruf (11,9 GB) dan file vektor yang bersesuaian (3,9 GB)
-- Model FastText (11.9 GB) [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.bin) 
-- File Vector (3.9 GB) [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext.4B.id.300.epoch5.uncased.vec.zip)
+- FastText model (11.9 GB) [[Tautan]](https://drive.google.com/file/d/1DqtWoot2MJXsk4Nx6yETcEyK-JzTv_P3/view?usp=drive_link) 
+- Vector file (3.9 GB) [[Tautan]](https://drive.google.com/file/d/1E_PvoXd2KU8HQEZEQroUGxiQ7FhNy-3v/view?usp=sharing)
 
 Kami menyediakan model FastText yang lebih kecil dengan kosakata yang lebih kecil untuk masing-masing dari 12 aplikasi
-- FastText-Indo4B [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-4B-id-uncased.zip)
-- FastText-CC-ID [[Tautan]](https://storage.googleapis.com/babert-pretraining/IndoNLU_finals/models/fasttext/fasttext-cc-id.zip)
+- FastText-Indo4B [[Tautan]](https://drive.google.com/file/d/1qkmCeEXxNTEBewp9IKW-FTFf5puknIaG/view?usp=sharing)
+- FastText-CC-ID [[Tautan]](https://drive.google.com/file/d/1DJ1MofWn2vf8gymkVfzk0I68xDOtXtEr/view?usp=sharing)
 
 ## Papan Peringkat
 - Portal Komunitas dan Public Papan Peringkat Publik [[Tautan]](https://www.indobenchmark.com/leaderboard.html)
